@@ -16,4 +16,6 @@ export interface TypePost{
         current: string;
     };
     body: [object];
+    comments: [object];
+    publishedAt: Date;
 }

@@ -19,24 +19,14 @@ export default function Post({ post }) {
           />
         )}
         <div className="grid gap-y-2 p-4">
-          <div className="grid grid-cols-6 gap-x-2">
-            <div className=" col-span-5 ">
-              <h3 className="text-2xl font-semibold">{post.title}</h3>
-            </div>
-            <div className="col-span-1">
-              <Image
-                height={'50px'}
-                width={'50px'}
-                objectFit="cover"
-                src={urlFor(post.author.image).url()!}
-                className=" rounded-md"
-                alt={post.author.name}
-              />
-            </div>
+          <h3 className="text-2xl font-semibold">{post.title}</h3>
+          <div className=" text-sm text-gray-500">
+            By <strong>{post.author && post.author.name}</strong> On{' '}
+            <strong>{post.publishedAt.slice(0, 10)}</strong>
           </div>
           <p className=" text-lg">
-            {post.description.length > 200
-              ? post.description.slice(0, 200) + '...'
+            {post.description.length > 150
+              ? post.description.slice(0, 150) + '...'
               : post.description}
           </p>
         </div>
