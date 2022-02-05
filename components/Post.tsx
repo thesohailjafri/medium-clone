@@ -3,7 +3,7 @@ import Link from 'next/link'
 import React from 'react'
 import { urlFor } from '../sanity'
 
-export default function Post({ post }) {
+export default function Post({ post }: any) {
   return (
     <Link href={`/posts/${post.slug.current}`}>
       <div className=" cursor-pointer overflow-hidden rounded-md bg-white shadow-md">

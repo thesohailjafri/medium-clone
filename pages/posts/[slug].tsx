@@ -6,7 +6,6 @@ import PortableText from 'react-portable-text'
 import { sanityClient, urlFor } from '../../sanity'
 import { TypePost } from '../../types'
 import { useForm, SubmitHandler } from 'react-hook-form'
-import Comment from '../../components/Comment'
 interface Props {
   post: TypePost
 }
@@ -182,7 +181,10 @@ export default function PostPage({ post }: Props) {
       <div id="comments">
         <p className="mb-4 text-3xl font-bold">Comments</p>
         {post?.comments?.map((comment: any) => (
-          <Comment comment={comment} />
+          <div className="flex gap-x-4">
+            <strong>{comment.name}</strong>
+            <p>{comment.comment}</p>
+          </div>
         ))}
       </div>
     </article>
