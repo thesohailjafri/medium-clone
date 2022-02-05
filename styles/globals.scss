@@ -3,17 +3,41 @@
 @tailwind utilities;
 
 @layer base {
+  body {
+    @apply bg-gray-200;
+  }
+  li {
+    @apply cursor-pointer;
+  }
 
-body{
-  @apply bg-gray-200 
-}
+  input[type='text'],
+  input[type='password'],
+  input[type='email'],
+  input[type='number'],
+  input[type='url'],
+  input[type='date'],
+  input[type='datetime-local'],
+  input[type='month'],
+  input[type='week'],
+  input[type='time'],
+  input[type='search'],
+  input[type='tel'],
+  input[type='checkbox'],
+  input[type='radio'],
+  select select[multiple],
+  textarea {
+    @apply border border-black bg-transparent px-3 py-2 text-black placeholder:text-gray-800
+    focus:outline-none focus:ring-0;
+  }
 
   .mycontainer {
     @apply mx-auto max-w-7xl  px-6 md:px-8 lg:px-12;
   }
-
-
-
+  .portabletext {
+    figure {
+      img {
+        @apply my-6 rounded-md shadow-md;
+      }
+    }
+  }
 }
-  
-
