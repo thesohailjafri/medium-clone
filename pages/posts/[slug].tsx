@@ -40,9 +40,9 @@ export default function PostPage({ post }: Props) {
       })
   }
 
-  React.useEffect(() => {
-    console.log(errors)
-  }, [errors])
+  // React.useEffect(() => {
+  //   console.log(errors)
+  // }, [errors])
 
   return (
     <article className=" mycontainer flex flex-col gap-y-4 py-6">
@@ -214,7 +214,7 @@ export const getStaticPaths = async () => {
 }
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const qy = `*[_type=="post" && slug.current == 'working-with-linux'][0]{
+  const qy = `*[_type=="post" && slug.current == '${params?.slug}'][0]{
     _id,
     title,
     slug,

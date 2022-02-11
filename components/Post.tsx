@@ -20,7 +20,7 @@ export default function Post({ post }: any) {
         )}
         <div className="grid gap-y-2 p-4">
           <h3 className="text-2xl font-semibold">{post.title}</h3>
-          <div className=" text-sm text-gray-500">
+          <div className=" text-base text-gray-500">
             By <strong>{post.author && post.author.name}</strong> On{' '}
             <strong>{post.publishedAt.slice(0, 10)}</strong>
           </div>
