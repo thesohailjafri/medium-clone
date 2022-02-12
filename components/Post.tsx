@@ -18,6 +18,7 @@ export default function Post({ post }: any) {
             alt={`${post.title!} image`}
           />
         )}
+        <span>{}</span>
         <div className="grid gap-y-2 p-4">
           <h3 className="text-2xl font-semibold">{post.title}</h3>
           <div className=" text-base text-gray-500">
