@@ -16,6 +16,22 @@ export default function Home(props: Props) {
       <Head>
         <title>Medium Clone</title>
         <link rel="icon" href="assets/images/favicon.png" />
+
+        {/* <!-- Geo Positioning Meta Tags. --> */}
+        <meta name="geo.region" content="IN-MH" />
+        <meta name="geo.placename" content="Mumbai" />
+        <meta name="geo.position" content="18;74" />
+        <meta name="ICBM" content="18, 74" />
+        {/* <!-- Search Eengine and Browser Meta Tags. --> */}
+        <meta
+          name="description"
+          content="Medium clone build with Next.js, TailwindCSS, Sanity.io, and React Hook Form."
+        />
+        <meta name="abstract" content="A Medium clone build by Sohail Jafri" />
+        <meta name="rating" content="General" />
+        {/* <!-- Open Graph Meta Tags (ogp.me) --> */}
+        <meta property="og:image" content="./assets/screenshots/d-home.png" />
+        <meta property="og:site_name" content="Medium Clone" />
       </Head>
       <Hero />
       <div className="mycontainer">
