@@ -6,18 +6,18 @@
 
 ### Home
 
-![desktop home](public\assets\screenshots\d-home.png)
+![desktop home](public/assets/screenshots/d-home.png)
 
 ### Blog
 
-![desktop post](public\assets\screenshots\d-post.png)
+![desktop post](public/assets/screenshots/d-post.png)
 
 ## Mobile
 
 ### Home
 
-![mobile home](public\assets\screenshots\m-home.png)
+![mobile home](public/assets/screenshots/m-home.png)
 
 ### Blog
 
-![mobile post](public\assets\screenshots\m-post.png)
+![mobile post](public/assets/screenshots/m-post.png)
