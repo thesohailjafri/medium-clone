@@ -30,6 +30,7 @@ export default function Home(props: Props) {
         <meta name="abstract" content="A Medium clone build by Sohail Jafri" />
         <meta name="rating" content="General" />
         {/* <!-- Open Graph Meta Tags (ogp.me) --> */}
+        {/* Never add ./ */}
         <meta property="og:title" content="Home Page" />
         <meta property="og:image" content="/assets/screenshots/d-home.png" />
         <meta property="og:site_name" content="Medium Clone" />
