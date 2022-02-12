@@ -45,7 +45,7 @@ export default function PostPage({ post }: Props) {
   // }, [errors])
 
   return (
-    <article className=" mycontainer flex flex-col gap-y-4 py-6">
+    <article className=" mycontainer flex flex-col gap-y-4 border-r border-l border-black bg-white py-6 shadow-md">
       <h1 className="text-4xl font-bold">{post.title}</h1>
       <h6 className="text-gray-500">{post.description}</h6>
       <div className="flex items-center justify-start gap-x-2 font-semibold text-gray-700">

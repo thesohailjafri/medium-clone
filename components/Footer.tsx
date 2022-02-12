@@ -8,7 +8,7 @@ import {
 } from 'react-icons/ai'
 export default function Footer() {
   return (
-    <footer className=" border-t border-black bg-yellow-500">
+    <footer className=" border-t border-black bg-yellow-400">
       <div className="mycontainer py-6">
         <div className="flex flex-col gap-4">
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-x-8">

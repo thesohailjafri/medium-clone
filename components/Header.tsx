@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Header() {
   return (
-    <header className=" fixed top-0 left-0 z-50 w-full border-b border-black bg-yellow-500">
+    <header className=" fixed top-0 left-0 z-50 w-full border-b border-black bg-yellow-400">
       <div className="mycontainer flex h-20 items-center  justify-between  ">
         <div>
           <div>

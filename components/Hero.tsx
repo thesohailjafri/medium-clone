@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Hero() {
   return (
-    <div className="  border-b border-black bg-yellow-500 ">
+    <div className="  border-b border-black bg-yellow-400 ">
       <div className="mycontainer flex items-center justify-between py-6">
         <div className=" md:w-4/5 lg:w-3/5 ">
           <h1 className=" font-serif text-5xl font-medium md:text-6xl lg:text-7xl">
