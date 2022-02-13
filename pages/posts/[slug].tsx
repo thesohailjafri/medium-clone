@@ -104,7 +104,7 @@ export default function PostPage({ post }: Props) {
       />
       <hr className=" my-4 border border-black" />
       {submitted ? (
-        <div className=" rounded-md bg-yellow-500 p-4 shadow-md">
+        <div className=" rounded-md bg-yellow-400 p-4 shadow-md">
           <h2 className=" mb-2 text-3xl font-bold">
             Thank you for your comment!
           </h2>
